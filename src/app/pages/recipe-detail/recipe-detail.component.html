@@ -1,0 +1,41 @@
+<div class="detail-page">
+  <button class="back-btn" routerLink="/home">⬅ Back</button>
+
+  <div class="recipe-container">
+    <div class="title-bar">
+      <h1>{{ recipe?.title | titlecase }}</h1>
+    </div>
+
+    <div class="section-card">
+      <h3>🧂 Ingredients</h3>
+      <ul>
+        <li *ngFor="let item of getIngredients(recipe?.ingredients)">
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h3>👨‍🍳 Procedure</h3>
+      <div
+        *ngFor="let step of getSteps(recipe?.procedure); let i = index"
+        class="step"
+      >
+        <span class="step-number">{{ i + 1 }}</span>
+        <p>{{ step }}</p>
+      </div>
+    </div>
+
+    <div class="section-card" *ngIf="recipe?.tips">
+      <h3>💡 Tips</h3>
+      <p>{{ recipe?.tips }}</p>
+    </div>
+
+    <!-- Admin buttons -->
+
+    <div class="action-buttons" *ngIf="isAdmin">
+      <button class="edit-btn" (click)="editRecipe()">Edit</button>
+      <button class="delete-btn" (click)="deleteRecipe()">Delete</button>
+    </div>
+  </div>
+</div>

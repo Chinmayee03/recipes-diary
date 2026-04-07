@@ -1,0 +1,26 @@
+<div class="dialog-header">
+  <h2>Add New Recipe 🍲</h2>
+  <button class="close-btn" (click)="close()">✖</button>
+</div>
+
+<div class="form">
+  <input type="text" placeholder="Recipe Title" [(ngModel)]="title" />
+
+  <textarea
+    class="ingredients"
+    placeholder="Ingredients (one per line)"
+    [(ngModel)]="ingredientsText"
+  >
+  </textarea>
+
+  <textarea class="procedure" placeholder="Procedure" [(ngModel)]="procedure">
+  </textarea>
+
+  <textarea class="tips" placeholder="Tips (optional)" [(ngModel)]="tips">
+  </textarea>
+
+  <div class="actions">
+    <button class="cancel" (click)="close()">Cancel</button>
+    <button class="save" (click)="save()">Save</button>
+  </div>
+</div>

@@ -1,0 +1,129 @@
+<div class="app-layout">
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="menu">
+      <button (click)="setView('home')" [class.active]="view === 'home'">
+        🏠 Home
+      </button>
+
+      <button (click)="setView('all')" [class.active]="view === 'all'">
+        📖 All Recipes
+      </button>
+
+      <button
+        (click)="setView('favorites')"
+        [class.active]="view === 'favorites'"
+      >
+        ❤️ Favorites
+      </button>
+
+      <button (click)="setView('info')" [class.active]="view === 'info'">
+        ℹ️ Info
+      </button>
+    </div>
+
+    <div class="logout">
+      <button (click)="logout()">Logout</button>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="content">
+    <!-- HEADER -->
+    <div class="top-bar">
+      <h1 class="app-title">Recipes <span>Diary🍲</span></h1>
+
+      <div class="user-info">
+        {{ user?.email }}
+      </div>
+    </div>
+
+    <!-- SEARCH -->
+    <input
+      *ngIf="showSearch()"
+      type="text"
+      placeholder="🔍 Search recipes..."
+      [(ngModel)]="searchText"
+    />
+
+    <!-- HERO (ONLY FOR HOME) -->
+    <div *ngIf="view === 'home'">
+      <div *ngIf="!hasSearchText()" class="home-placeholder">
+        <p>Start typing to search recipes 👆</p>
+      </div>
+    </div>
+
+    <!-- HOME SEARCH RESULTS -->
+    <div *ngIf="view === 'home'">
+      <div *ngIf="hasSearchText()">
+        <div *ngFor="let recipe of filteredRecipes()" class="recipe-card">
+          <div (click)="openRecipe(recipe)">
+            {{ recipe.title | titlecase }}
+          </div>
+
+          <button (click)="toggleFavorite(recipe)">
+            {{ isFavorite(recipe) ? "❤️" : "🤍" }}
+          </button>
+        </div>
+
+        <div *ngIf="filteredRecipes().length === 0" class="empty">
+          No recipes found 😔
+        </div>
+      </div>
+    </div>
+
+    <!-- ALL RECIPES -->
+    <div *ngIf="view === 'all'">
+      <div *ngFor="let recipe of filteredRecipes()" class="recipe-card">
+        <div (click)="openRecipe(recipe)">
+          {{ recipe.title | titlecase }}
+        </div>
+
+        <button (click)="toggleFavorite(recipe)">
+          {{ isFavorite(recipe) ? "❤️" : "🤍" }}
+        </button>
+      </div>
+    </div>
+
+    <!-- FAVORITES -->
+    <div *ngIf="view === 'favorites'">
+      <div *ngFor="let recipe of filteredFavorites()" class="recipe-card">
+        <div (click)="openRecipe(recipe)">
+          {{ recipe.title | titlecase }}
+        </div>
+
+        <button (click)="toggleFavorite(recipe)">❤️</button>
+      </div>
+
+      <div *ngIf="favorites.length === 0" class="empty">
+        No favorites yet ❤️
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div *ngIf="view === 'info'" class="info-page">
+      <h2>About Recipes Diary🍲</h2>
+
+      <p>
+        This is a recipe management web application built using Angular and
+        Firebase.
+      </p>
+
+      <ul>
+        <li>🔐 User Authentication using Firebase</li>
+        <li>📖 Add, Edit, Delete Recipes</li>
+        <li>🔍 Search Recipes</li>
+        <li>❤️ Favorite Recipes (User-specific)</li>
+        <li>☁️ Data stored in Firestore</li>
+      </ul>
+
+      <p>
+        This project demonstrates full-stack development with real-time database
+        integration.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- FLOATING BUTTON -->
+<button *ngIf="showFab()" class="fab-btn" (click)="openPopup()">＋</button>

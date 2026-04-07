@@ -1,0 +1,78 @@
+/* HEADER */
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+
+  padding: 12px 16px;
+}
+
+.dialog-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+
+/* INPUTS */
+input,
+textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #f5f5f5;
+}
+
+/* HEIGHT CONTROL */
+.ingredients {
+  min-height: 100px;
+}
+
+.procedure {
+  min-height: 140px;
+}
+
+.tips {
+  min-height: 60px;
+}
+
+/* BUTTONS CENTER */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* BUTTONS */
+.save {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+.cancel {
+  background: #ddd;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+}

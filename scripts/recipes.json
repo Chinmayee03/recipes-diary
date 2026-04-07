@@ -1,0 +1,188 @@
+[
+  {
+    "title": "Sabudana Khichdi",
+    "ingredients": [
+      "1 cup sabudana",
+      "2 potatoes",
+      "1/2 cup peanuts",
+      "2 green chillies",
+      "1 tsp jeera",
+      "salt",
+      "lemon juice"
+    ],
+    "procedure": "Soak sabudana overnight\nBoil and chop potatoes\nHeat oil and add jeera\nAdd chillies and peanuts\nAdd potatoes and sabudana\nMix well and cook\nAdd salt and lemon juice",
+    "tips": "Do not overcook sabudana"
+  },
+  {
+    "title": "Simple Rice",
+    "ingredients": ["1 cup rice", "2 cups water", "salt"],
+    "procedure": "Wash rice\nBoil water\nAdd rice and salt\nCook for 10-12 minutes\nDrain excess water",
+    "tips": "Use basmati rice for better taste"
+  },
+  {
+    "title": "Dal Tadka",
+    "ingredients": [
+      "1 cup toor dal",
+      "2 cups water",
+      "1 onion",
+      "2 tomatoes",
+      "garlic",
+      "mustard seeds",
+      "cumin seeds",
+      "turmeric",
+      "salt"
+    ],
+    "procedure": "Cook dal in pressure cooker\nHeat oil in pan\nAdd mustard and cumin seeds\nAdd garlic, onion, tomato\nAdd spices and cooked dal\nSimmer for 5 minutes",
+    "tips": "Add ghee for better flavor"
+  },
+  {
+    "title": "Aloo Paratha",
+    "ingredients": [
+      "2 cups wheat flour",
+      "3 potatoes",
+      "green chillies",
+      "coriander",
+      "salt",
+      "butter"
+    ],
+    "procedure": "Boil and mash potatoes\nAdd spices and mix\nPrepare dough\nStuff potato mixture\nRoll and cook on tawa\nApply butter and serve",
+    "tips": "Serve hot with curd"
+  },
+  {
+    "title": "Vegetable Pulao",
+    "ingredients": [
+      "1 cup rice",
+      "mixed vegetables",
+      "whole spices",
+      "onion",
+      "ginger garlic paste",
+      "salt"
+    ],
+    "procedure": "Wash rice\nHeat oil and add spices\nAdd onion and sauté\nAdd vegetables\nAdd rice and water\nCook until done",
+    "tips": "Use fresh vegetables"
+  },
+  {
+    "title": "Paneer Butter Masala",
+    "ingredients": [
+      "200g paneer",
+      "2 tomatoes",
+      "1 onion",
+      "butter",
+      "cream",
+      "garam masala",
+      "salt"
+    ],
+    "procedure": "Prepare tomato gravy\nCook onion and spices\nAdd paneer cubes\nAdd butter and cream\nSimmer for 5 minutes",
+    "tips": "Use fresh paneer"
+  },
+  {
+    "title": "Masala Dosa",
+    "ingredients": [
+      "dosa batter",
+      "potatoes",
+      "mustard seeds",
+      "curry leaves",
+      "turmeric",
+      "salt"
+    ],
+    "procedure": "Prepare potato filling\nHeat dosa pan\nSpread batter\nAdd filling\nFold dosa and serve",
+    "tips": "Serve with chutney"
+  },
+  {
+    "title": "Chole",
+    "ingredients": [
+      "1 cup chickpeas",
+      "2 onions",
+      "2 tomatoes",
+      "ginger garlic",
+      "chole masala",
+      "salt"
+    ],
+    "procedure": "Soak chickpeas overnight\nCook in pressure cooker\nPrepare masala\nAdd chickpeas\nCook for 10 minutes",
+    "tips": "Garnish with coriander"
+  },
+  {
+    "title": "Rajma",
+    "ingredients": [
+      "1 cup rajma",
+      "2 onions",
+      "2 tomatoes",
+      "ginger garlic",
+      "spices",
+      "salt"
+    ],
+    "procedure": "Soak rajma overnight\nCook in pressure cooker\nPrepare gravy\nAdd rajma\nSimmer well",
+    "tips": "Serve with rice"
+  },
+  {
+    "title": "Upma",
+    "ingredients": [
+      "1 cup rava",
+      "mustard seeds",
+      "curry leaves",
+      "green chillies",
+      "onion",
+      "salt"
+    ],
+    "procedure": "Roast rava\nHeat oil and add seeds\nAdd onion and chillies\nAdd water and salt\nAdd rava and cook",
+    "tips": "Serve hot"
+  },
+  {
+    "title": "Poha",
+    "ingredients": [
+      "1 cup poha",
+      "mustard seeds",
+      "peanuts",
+      "onion",
+      "turmeric",
+      "salt"
+    ],
+    "procedure": "Wash poha\nHeat oil\nAdd mustard seeds and peanuts\nAdd onion\nAdd poha and spices\nMix well",
+    "tips": "Add lemon juice"
+  },
+  {
+    "title": "Idli",
+    "ingredients": ["idli batter", "salt"],
+    "procedure": "Grease idli molds\nPour batter\nSteam for 10-12 minutes\nServe hot",
+    "tips": "Serve with chutney"
+  },
+  {
+    "title": "Sambar",
+    "ingredients": [
+      "toor dal",
+      "vegetables",
+      "tamarind",
+      "sambar powder",
+      "salt"
+    ],
+    "procedure": "Cook dal\nBoil vegetables\nAdd tamarind and spices\nMix dal\nSimmer well",
+    "tips": "Use fresh spices"
+  },
+  {
+    "title": "Egg Curry",
+    "ingredients": [
+      "4 eggs",
+      "2 onions",
+      "2 tomatoes",
+      "spices",
+      "oil",
+      "salt"
+    ],
+    "procedure": "Boil eggs\nPrepare gravy\nAdd spices\nAdd eggs\nCook for 5 minutes",
+    "tips": "Garnish with coriander"
+  },
+  {
+    "title": "Chicken Curry",
+    "ingredients": [
+      "500g chicken",
+      "2 onions",
+      "2 tomatoes",
+      "ginger garlic",
+      "spices",
+      "oil",
+      "salt"
+    ],
+    "procedure": "Marinate chicken\nCook onions and spices\nAdd chicken\nAdd water\nCook until done",
+    "tips": "Cook on low flame"
+  }
+]

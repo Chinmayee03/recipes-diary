@@ -1,0 +1,71 @@
+.login-container {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+}
+
+/* CARD */
+.login-card {
+  /* background image with translucent white overlay for readability */
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url("/assets/images/login-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+
+  padding: 40px;
+  border-radius: 16px;
+
+  text-align: center;
+  color: #111;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 500px;
+}
+
+@media (max-width: 600px) {
+  .login-card {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* TITLE */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title span {
+  color: #f59e0b;
+}
+
+/* SUBTITLE */
+.subtitle {
+  color: gray;
+  margin-bottom: 25px;
+}
+
+/* BUTTON */
+.google-btn {
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+  color: white;
+
+  border: none;
+  padding: 12px 20px;
+
+  border-radius: 10px;
+  font-size: 16px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.google-btn:hover {
+  transform: scale(1.05);
+}
